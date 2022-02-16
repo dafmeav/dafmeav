@@ -28,8 +28,8 @@ canvas { background:#eee; display:block; margin:0 auto; }
 		enemy[i] = {};
 		enemy[i].x = 20 + i*130;	// xa, xb, xc, xd
 		enemy[i].y = 20;			// ya
-		enemy[i].dx = 1;			// dxx
-		enemy[i].dy = 1;			// dya
+		enemy[i].dx = 0;	// dxx
+		enemy[i].dy = 0;		// dya
 		enemy[i].width  = 40;		// sa, sb, sc, sd
 		enemy[i].height = 30;		// sa-10, sb-10, sc-10, sd-10
 	}
@@ -665,7 +665,7 @@ canvas { background:#eee; display:block; margin:0 auto; }
 		}
 		}
 		
-		if(score == 16 && ult > 4000) {
+		if(score == 0 && ult > 4000) {
 		console.log("ULT発動可能");
 		}
 		
